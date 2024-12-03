@@ -32,7 +32,7 @@ public class Journal
         {
             foreach (Entry entry in _entries)
             {
-                writer.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText}");
+                writer.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText}|{entry._moodBefore}|{entry._moodAfter}");
             }
         }
         Console.WriteLine("Journal saved successfully.");
@@ -48,12 +48,10 @@ public class Journal
             foreach (string line in lines)
             {
                 string[] parts = line.Split('|');
-                if (parts.Length == 3)
+                if (parts.Length == 5)
                 {
-                    Entry loadedEntry = new Entry(parts[1], parts[2])
-                    {
-                        _date = parts[0]
-                    };
+                    Entry loadedEntry = new Entry(parts[1], parts[2], parts[3], parts[4]);
+                    loadedEntry._date = parts[0];
                     _entries.Add(loadedEntry);
                 }
             }
