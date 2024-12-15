@@ -1,4 +1,4 @@
-public class ReflectingActivity
+public class ReflectingActivity : Activity
 {
    private List<string> _prompts = new List<string>
    {
@@ -10,7 +10,7 @@ public class ReflectingActivity
     // List of questions
    };
 
-   public ReflectingActivity(string prompts, string questions)
+   public ReflectingActivity(string name, string description, string duration, string prompts, string questions) : base(name, description, duration)
    {
     // Insert here
    }

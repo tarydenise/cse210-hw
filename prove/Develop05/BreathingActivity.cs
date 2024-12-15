@@ -1,6 +1,6 @@
-public class BreathingActivity
+public class BreathingActivity : Activity
 {
-    public BreathingActivity()
+    public BreathingActivity(string name, string description, string duration) : base(name, description, duration) 
     {
         // build constructor here
     }

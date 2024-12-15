@@ -1,4 +1,4 @@
-public class ListingActivity
+public class ListingActivity : Activity
 {
     private int _count;
    private List<string> _prompts = new List<string>
@@ -6,7 +6,7 @@ public class ListingActivity
     // List of prompts
    };
 
-    public ListingActivity(int count, string prompts)
+    public ListingActivity(string name, string description, string duration, int count, string prompts) : base(name, description, duration)
     {
         // build constructor here
     }
