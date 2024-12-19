@@ -1,0 +1,4 @@
+105
+SimpleGoal: hold fhe every weekly on mondays, work on come follow me together and family check ins, 20, True
+EternalGoal: pray at least morning and night, work on staying close to the savior through the holy ghost, 5
+ChecklistGoal: assignments, 3 assignments left, 10, 3, 50, 3

@@ -1,13 +1,14 @@
+using System;
+
 public class EternalGoal : Goal
 {
-    public EternalGoal(string name, string description, int points) : base(name, description, points)
+    public EternalGoal(string shortName, string description, int points) : base(shortName, description, points)
     {
-        // Constructor
     }
 
-    public override int RecordEvent()
+    public override void RecordEvent()
     {
-        return 0;
+        
     }
 
     public override bool IsComplete()
@@ -15,8 +16,8 @@ public class EternalGoal : Goal
         return false;
     }
 
-    public override string GetStringRespresentation()
+    public override string GetStringRepresentation()
     {
-        return "";
+        return $"EternalGoal: {_shortName}, {_description}, {_points}";
     }
 }
